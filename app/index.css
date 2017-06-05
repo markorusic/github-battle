@@ -1,0 +1,207 @@
+body{	
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+.container {
+	padding: 50px;	
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;	
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	opacity: 0.7;
+}
+
+input[type='text']{
+	padding: 3px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	height: 18px;	
+}
+
+button{
+	background-color: #00DACB;
+    border: none;
+    border-radius: 3px;
+    color: white;    
+    height: 26px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button:hover{
+	opacity: 0.7;
+}
+
+
+/*Languages ul*/
+.langsUl {
+	display: flex;
+	justify-content: center;
+}
+
+.langsUl li {
+	margin: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.langsUl li.active{
+	color: #06E4B0;
+}
+
+.stars{
+	display: flex;
+	justify-content: center;
+}
+
+/*Repo*/
+.repoGrid{	
+	display: table;
+	margin: 0 auto;
+}
+
+
+.repoGrid li{
+	display: inline-block;
+	margin: 10px;
+}
+
+.repoGrid li div{	
+	width: 250px;		
+	height: 330px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.repoGrid li div *{
+	display: table;
+	margin: 0 auto;
+}
+
+.repoGrid li div img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+
+
+
+/*Home*/
+a.button{
+	border: 1px solid #ccc;			
+	border-radius: 3px;
+	padding: 5px 30px 8px 30px;
+	font-size: 20px;
+}
+
+
+/*Battle*/
+.battle{
+	display: table !important;	
+}
+
+
+ul.users li.user{
+	/*position: absolute;*/
+	/*width: 300px;*/
+	/*height: 400px;*/
+	display: inline-grid;
+	margin: 0 15px 0 15px;	
+}
+
+.battle-button{
+	background: #E6240E;
+	display: inline-block;
+}
+
+img.user-image{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+
+/*Loader*/
+.loader{
+	font-size: 25px;
+	font-weight: bold;
+}
+@keyframes blink {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }
+
+
+
+/* The navigation bar */
+.activeNav{
+	font-weight: bold;
+}
+.nav-ul li{
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+
+
+
+/*game-of-life*/
+.game-of-life{
+	display: table;
+	margin: 0 auto;
+	padding: 40px;
+	width: 500px;
+	max-height: 550px;
+	border: 1px solid #444;
+}
+.game-of-life .cell{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: -4px;
+	
+	border: 1px solid #ecc;
+	cursor: pointer;
+}
+
+.game-of-life .cell:hover{
+	background-color: #ccc;
+}
+
+.game-of-life .cell.active{
+	background-color: #222;
+}
+
+.game-of-life .controls li{
+	display: inline-block;	
+	margin-right: 25px;
+}
+
+.game-of-life .toggleGame{
+	background-color: #FF8000;
+}
+.game-of-life .next-gen{
+	background-color: green;
+}
