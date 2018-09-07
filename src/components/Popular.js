@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import * as api from '../utils/api';
+import api from '../utils/api';
 import Loader from './Loader'
 
 class Popular extends Component{

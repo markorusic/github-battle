@@ -72,14 +72,14 @@ button:hover{
 }
 
 /*Repo*/
-.repoGrid{	
-	display: table;
-	margin: 0 auto;
+.repoGrid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 
 .repoGrid li{
-	display: inline-block;
 	margin: 10px;
 }
 
@@ -162,46 +162,4 @@ img.user-image{
 	display: inline-block;
 	font-size: 20px;
 	margin-left: 20px;
-}
-
-
-
-
-/*game-of-life*/
-.game-of-life{
-	display: table;
-	margin: 0 auto;
-	padding: 40px;
-	width: 500px;
-	max-height: 550px;
-	border: 1px solid #444;
-}
-.game-of-life .cell{
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin-top: -4px;
-	
-	border: 1px solid #ecc;
-	cursor: pointer;
-}
-
-.game-of-life .cell:hover{
-	background-color: #ccc;
-}
-
-.game-of-life .cell.active{
-	background-color: #222;
-}
-
-.game-of-life .controls li{
-	display: inline-block;	
-	margin-right: 25px;
-}
-
-.game-of-life .toggleGame{
-	background-color: #FF8000;
-}
-.game-of-life .next-gen{
-	background-color: green;
 }
